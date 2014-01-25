@@ -1,30 +1,54 @@
+<<<<<<< HEAD
+# Project: KMP
+=======
 # Project: Bruteforce
+>>>>>>> 1a04b8f5b40e52d4958ee4547c1b7b817c4073cb
 # Makefile created by Dev-C++ 4.9.9.2
 
 CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
+<<<<<<< HEAD
+OBJ  = main_KMP.o $(RES)
+LINKOBJ  = main_KMP.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = KMP.exe
+=======
 OBJ  = main.o $(RES)
 LINKOBJ  = main.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
 BIN  = Bruteforce.exe
+>>>>>>> 1a04b8f5b40e52d4958ee4547c1b7b817c4073cb
 CXXFLAGS = $(CXXINCS)  
 CFLAGS = $(INCS)  
 RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
+<<<<<<< HEAD
+all: all-before KMP.exe all-after
+=======
 all: all-before Bruteforce.exe all-after
+>>>>>>> 1a04b8f5b40e52d4958ee4547c1b7b817c4073cb
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
+<<<<<<< HEAD
+	$(CC) $(LINKOBJ) -o "KMP.exe" $(LIBS)
+
+main_KMP.o: main_KMP.c
+	$(CC) -c main_KMP.c -o main_KMP.o $(CFLAGS)
+=======
 	$(CC) $(LINKOBJ) -o "Bruteforce.exe" $(LIBS)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
+>>>>>>> 1a04b8f5b40e52d4958ee4547c1b7b817c4073cb
